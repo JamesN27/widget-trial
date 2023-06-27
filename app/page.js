@@ -132,7 +132,10 @@ export default function Home() {
           </p>
         </a>
 
-        <div id="oddspedia-widget-container"></div>
+        <div
+          id="oddspedia-widget-container"
+          className={styles.widgetContainer}
+        ></div>
 
         <footer className={styles.footer}>
           <p>Data powered by Oddspedia</p>
