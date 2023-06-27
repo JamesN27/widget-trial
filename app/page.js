@@ -15,7 +15,7 @@ export default function Home() {
         type: "odds-comparison",
         domain: "widget-trial.vercel.app/",
         selector: "oddspedia-widget-container",
-        width: "400",
+        width: "1200",
         theme: "1",
         odds_type: "1",
         language: "en",
