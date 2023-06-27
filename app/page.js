@@ -91,6 +91,38 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
+
+        <div id="oddspedia-widget-odds-comparison-popular-false-sports-false-leagues-false">
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.oddspediaWidgetOddsComparisonPopularSportsLeagues = {
+                api_token: "1802fa7b754c1a082862aa19948c30499bcd952be46462a15b5874b481e3",
+                type: "odds-comparison",
+                domain: "widget-trial.vercel.app/",
+                selector: "oddspedia-widget-odds-comparison-popular-false-sports-false-leagues-false",
+                width: "0",
+                theme: "1",
+                odds_type: "1",
+                language: "en",
+                primary_color: "#283E5B",
+                accent_color: "#00B1FF",
+                font: "Roboto",
+                logos: "true",
+                limit: "10",
+                popular: "false",
+                sports: "",
+                leagues: ""
+              };
+              `,
+            }}
+          />
+          <script
+            src="https://widgets.oddspedia.com/js/widget/init.js?widgetId=oddspediaWidgetOddsComparisonPopularSportsLeagues"
+            async
+          />
+        </div>
+
         <footer className={styles.footer}>
           <p>Data powered by Oddspedia</p>
           <Link href="https://oddspedia.com/">
